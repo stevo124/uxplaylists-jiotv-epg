@@ -3,7 +3,7 @@
 date_default_timezone_set('Asia/Kolkata');
 
 // Get channel ID from query parameter
-$channel_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$channel_id = isset($_GET['id']) ? intval($_GET['id']) : 0; // Default to 872 (Sony Yay Hindi)
 
 // Fetch JSON data from the API
 $ch = curl_init();
